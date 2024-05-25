@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <link rel="icon" href="imagenes/corazon.png" type="image/png">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Alura Geek</title>
+</head>
+<body>
+
+<header class="header">
+  <h1>Alura Geek ❤️❤️❤️</h1>
+</header>
+
+<div class="container">
+  <h2>Agregar productos</h2>
+  <form id="product-form">
+    <div>
+      <label for="product-name">Nombre:</label>
+      <input type="text" id="product-name" required>
+    </div>
+    <div>
+      <label for="product-price">Precio:</label>
+      <input type="number" id="product-price" step="0.01" required>
+    </div>
+    <div>
+      <label for="product-image">Imagen (URL):</label>
+      <input type="url" id="product-image" required>
+    </div>
+    <div style="display: flex; justify-content: space-between;">
+      <button type="button" id="clear-btn">Limpiar</button>
+      <button type="submit">Enviar</button>
+    </div>
+  </form>
+
+  <h2>Mis productos</h2>
+  <div id="product-list">
+    <!-- Aquí se mostrarán los productos añadidos -->
+  </div>
+
+  
+</div>
+
+<footer class="footer">
+  <p>&copy; 2024 Alura Geek. Hecho por Juan Alexander Paulino.</p>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
